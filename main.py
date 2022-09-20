@@ -24,6 +24,8 @@ im = Image.open(userimg)
 frames = []
 
 
+# credit to radarhere <3 borrowed some of his code
+
 for frame in ImageSequence.Iterator(im):
 	frame = frame.convert('RGBA')
 	d = ImageDraw.Draw(frame)
